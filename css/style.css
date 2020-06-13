@@ -256,6 +256,10 @@ section.difs .box-single {
     transition: .4s;
 }
 
+section.difs .box-single:nth-of-type(2) {
+    margin: 0 50px;
+}
+
 section.difs .box-single .box-icon i {
     font-size: 67px;
     color: rgb(0, 185, 185);
@@ -296,6 +300,17 @@ section.difs .box-single:hover {
     }
     .call-wrapper .call-txt h3 {
         float: none;
+    }
+    section.difs .box-single-wrapper {
+        display: block;
+    }
+    section.difs .box-single {
+        width: 100%;
+        padding: 30px 2%;
+        margin: 20px 0;
+    }
+    section.difs .box-single:nth-of-type(2) {
+        margin: 0;
     }
 }
 
