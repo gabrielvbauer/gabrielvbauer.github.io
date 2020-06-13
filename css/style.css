@@ -215,6 +215,57 @@ section.call-hd {
     border-radius: 20px;
     color: white;
     background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(0, 185, 185);
+}
+
+
+/**********/
+
+
+/***** SECTION DIFS *****/
+
+section.difs {
+    color: white;
+    background-color: #111111;
+}
+
+section.difs .container>h2 {
+    font-size: 29px;
+    text-align: center;
+    padding: 45px 0;
+}
+
+section.difs .box-single-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 0 3% 20px 3%;
+    display: flex;
+}
+
+section.difs .box-single {
+    width: 100%;
+    padding: 30px 0;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+section.difs .box-single .box-icon i {
+    font-size: 67px;
+    color: rgb(0, 185, 185);
+}
+
+section.difs .box-single h2 {
+    padding: 20px 0px 15px 0;
+}
+
+section.difs .box-single p {
+    padding: 0 20px;
+}
+
+section.difs .box-single:hover {
+    color: rgb(0, 185, 185);
+    border: 3px solid rgb(0, 185, 185);
 }
 
 
