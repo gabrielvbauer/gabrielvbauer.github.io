@@ -231,6 +231,7 @@ section.call-hd {
 /***** SECTION DIFS *****/
 
 section.difs {
+    padding-bottom: 50px;
     color: white;
     background-color: #111111;
 }
@@ -251,8 +252,9 @@ section.difs .box-single-wrapper {
 section.difs .box-single {
     width: 100%;
     padding: 30px 0;
-    border: 3px solid white;
+    border: 3px solid rgb(25, 25, 25);
     border-radius: 10px;
+    background-color: rgb(25, 25, 25);
     transition: .4s;
 }
 
@@ -276,7 +278,83 @@ section.difs .box-single p {
 section.difs .box-single:hover {
     color: rgb(0, 185, 185);
     border: 3px solid rgb(0, 185, 185);
+    box-shadow: 0px 0px 10px #00b9b9;
+}
+
+
+/**********/
+
+
+/***** SECTION KNOWLEDGES *****/
+
+section.knowledges {
+    text-align: center;
+    color: white;
+    background-color: #1e1e1e;
+}
+
+section.knowledges .container>h2 {
+    padding: 50px 0 25px 0;
+}
+
+section.knowledges .knowledges-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+section.knowledges .knowledges-single {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+section.knowledges .knowledges-single .know-all {
+    padding: 10px 15px;
+    display: flex;
+    border-radius: 15px;
+    border: 3px solid rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50);
+    transition: .4s;
+}
+
+section.knowledges .knowledges-single .know-all:hover {
+    border: 3px solid rgb(0, 185, 185);
     box-shadow: 0px 0px 10px rgb(0, 185, 185);
+    background-color: rgb(25, 25, 25);
+    color: rgb(0, 185, 185);
+}
+
+section.knowledges .knowledges-single .know-all:hover .know-bar {
+    color: white;
+    background-color: rgb(0, 185, 185);
+    border: 1px solid rgb(0, 185, 185);
+}
+
+section.knowledges .knowledges-single .know-icon i {
+    font-size: 60px;
+    color: rgb(0, 185, 185);
+}
+
+section.knowledges .knowledges-single .know-items {
+    padding: 0 10px;
+    align-self: center;
+}
+
+section.knowledges .knowledges-single .know-items .know-title {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+section.knowledges .knowledges-single .know-items .know-bar {
+    width: 130px;
+    border-radius: 20px;
+    border: 1px solid white;
+    transition: .4s;
+}
+
+section.knowledges .knowledges-single .know-items .know-bar p {
+    padding: 0 10px;
 }
 
 
@@ -311,6 +389,9 @@ section.difs .box-single:hover {
     }
     section.difs .box-single:nth-of-type(2) {
         margin: 0;
+    }
+    section.knowledges .knowledges-wrapper {
+        display: inline-block
     }
 }
 
