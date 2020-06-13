@@ -47,6 +47,12 @@ header .logo h2 {
     font-weight: lighter;
     font-size: 27px;
     color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+header .logo h2:hover {
+    color: rgb(0, 177, 177);
 }
 
 header .logo span {
@@ -266,6 +272,7 @@ section.difs .box-single p {
 section.difs .box-single:hover {
     color: rgb(0, 185, 185);
     border: 3px solid rgb(0, 185, 185);
+    box-shadow: 0px 0px 10px rgb(0, 185, 185);
 }
 
 
