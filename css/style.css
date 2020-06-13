@@ -298,12 +298,12 @@ section.knowledges .container>h2 {
 }
 
 section.knowledges .knowledges-wrapper {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 section.knowledges .knowledges-single {
-    width: 100%;
+    width: 33.3%;
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -390,8 +390,14 @@ section.knowledges .knowledges-single .know-items .know-bar p {
     section.difs .box-single:nth-of-type(2) {
         margin: 0;
     }
-    section.knowledges .knowledges-wrapper {
-        display: inline-block
+    section.knowledges .knowledges-single {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    section.knowledges .knowledges-single {
+        width: 100%;
     }
 }
 
