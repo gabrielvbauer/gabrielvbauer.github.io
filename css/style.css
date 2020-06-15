@@ -22,6 +22,29 @@ body {
     margin: 0 auto;
 }
 
+.btn {
+    width: 140px;
+    padding: 5px 0;
+    margin: 12px 7px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: .4s;
+}
+
+.btn:hover {
+    width: 140px;
+    padding: 5px 0;
+    border: 2px solid rgb(0, 185, 185);
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(0, 185, 185);
+}
+
 
 /*** ***/
 
@@ -166,6 +189,7 @@ li.selected>span {
 
 section.call-hd .container {
     max-width: 1100px;
+    padding: 0 2%;
 }
 
 section.call-hd {
@@ -183,7 +207,7 @@ section.call-hd {
 }
 
 .call-wrapper .call-txt {
-    width: 500px;
+    width: 480px;
     text-align: center;
 }
 
@@ -199,29 +223,6 @@ section.call-hd {
     font-weight: lighter;
     float: right;
     color: white;
-}
-
-.call-wrapper .call-txt input[type=button] {
-    width: 140px;
-    padding: 5px 0;
-    margin: 12px 7px;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 20px;
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-    transition: .4s;
-}
-
-.call-wrapper .call-txt input[type=button]:hover {
-    width: 140px;
-    padding: 5px 0;
-    border: 2px solid rgb(0, 185, 185);
-    border-radius: 20px;
-    color: white;
-    background-color: transparent;
-    box-shadow: 0px 0px 5px rgb(0, 185, 185);
 }
 
 
@@ -291,6 +292,7 @@ section.knowledges {
     text-align: center;
     color: white;
     background-color: #1e1e1e;
+    padding: 0px 0px 50px 0;
 }
 
 section.knowledges .container>h2 {
@@ -361,6 +363,93 @@ section.knowledges .knowledges-single .know-items .know-bar p {
 /**********/
 
 
+/***** SECTION PROJECTS *****/
+
+section.projects {
+    color: white;
+    background-color: #111111;
+    padding: 0px 0px 50px 0;
+}
+
+section.projects .container {
+    padding: 0 2%;
+}
+
+section.projects .container>h2 {
+    padding: 50px 0;
+    text-align: center;
+}
+
+section.projects .proj-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+section.projects .proj-img {
+    width: 50%;
+    height: 400px;
+    background-image: url(../images/projeto01.png);
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+    filter: blur(1px);
+    filter: grayscale(50%);
+    transition: .4s;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.603);
+}
+
+section.projects .proj-img:hover {
+    width: 80%;
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.903);
+    filter: blur(0px);
+    filter: grayscale(0%);
+}
+
+section.projects .proj-txt-wp {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    background-color: rgb(50, 50, 50);
+    border-radius: 0 20px 20px 0;
+    transition: .4s
+}
+
+section.projects .proj-txt-wp:hover {
+    width: 80%;
+    background-color: rgb(60, 60, 60);
+}
+
+section.projects .proj-txt {
+    padding: 0 20px;
+    text-align: right;
+    align-self: center;
+}
+
+section.projects .proj-txt p {
+    padding: 20px 0;
+}
+
+section.projects .proj-nav {
+    position: relative;
+    top: 20px;
+}
+
+section.projects .proj-nav i {
+    font-size: 35px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+section.projects .proj-nav i:hover {
+    font-size: 38px;
+    color: rgb(0, 185, 185);
+    text-shadow: 0px 0px 10px rgb(0, 185, 185);
+}
+
+
+/**********/
+
+
 /******** MEDIA QUERIES ********/
 
 @media screen and (max-width: 768px) {
@@ -392,6 +481,28 @@ section.knowledges .knowledges-single .know-items .know-bar p {
     }
     section.knowledges .knowledges-single {
         width: 50%;
+    }
+    section.projects .proj-wrapper {
+        display: block;
+    }
+    section.projects .proj-img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.603);
+    }
+    section.projects .proj-img:hover {
+        width: 100%;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.903);
+    }
+    section.projects .proj-txt-wp {
+        width: 100%;
+        background-color: rgb(50, 50, 50);
+        border-radius: 0 0 20px 20px;
+        transition: .4s;
+    }
+    section.projects .proj-txt-wp:hover {
+        width: 100%;
+        background-color: rgb(60, 60, 60);
     }
 }
 
