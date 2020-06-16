@@ -757,7 +757,6 @@ section.mid .about .photo-wrapper .photo-slider {
     height: 500px;
     background-image: url(../images/naneun01.jpg);
     background-size: cover;
-    background-position: center;
     filter: saturate(150%);
     border-radius: 20px;
 }
