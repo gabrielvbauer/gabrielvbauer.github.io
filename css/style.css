@@ -827,6 +827,65 @@ section.contato {
     background-color: #1e1e1e;
 }
 
+section.contato .contact-wrapper {
+    width: 100%;
+    padding: 50px 0 0 0;
+}
+
+section.contato p {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: lighter;
+    padding: 5px 0;
+}
+
+section.contato p>span {
+    color: rgb(0, 185, 185);
+}
+
+section.contato .social {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 20px;
+}
+
+section.contato .soc-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    transition: 0.4s;
+}
+
+section.contato .soc-circle i {
+    font-size: 24px;
+    color: white;
+    transition: 0.4s;
+}
+
+section.contato .social a {
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section.contato .social a:hover i {
+    color: rgb(0, 185, 185);
+}
+
+section.contato .social a:hover>.soc-circle {
+    background-color: rgb(80, 80, 80);
+    border: 2px solid rgb(0, 185, 185);
+    box-shadow: 0px 0px 10px rgb(0, 185, 185);
+}
+
 section.contato form {
     width: 100%;
     max-width: 500px;
