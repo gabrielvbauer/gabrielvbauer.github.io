@@ -49,6 +49,10 @@ a {
     text-decoration: none;
 }
 
+.show {
+    display: block;
+}
+
 
 /*** ***/
 
@@ -223,6 +227,27 @@ nav.menu-btn .btn-top:hover {
 
 nav.menu-btn .btn-top:hover>i {
     color: rgb(0, 185, 185);
+    animation: spin .4s 1;
+    -moz-animation: spin .4s 1;
+    -webkit-animation: spin .4s 1;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
@@ -448,6 +473,36 @@ section.projects .proj-img:hover {
     filter: grayscale(0%);
 }
 
+
+/* SLIDER */
+
+.slider {
+    display: none;
+}
+
+.proj-desc {
+    display: none;
+}
+
+.fade {
+    animation: fade 1s;
+    -moz-animation: fade 1s;
+    -webkit-animation: fade 1s;
+    position: relative;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/***/
+
 section.projects .proj-txt-wp {
     width: 50%;
     height: 400px;
@@ -550,7 +605,9 @@ section.mid .about .photo-wrapper {
 section.mid .about .photo-wrapper .photo {
     width: 350px;
     height: 500px;
-    background-image: url(../images/projeto01.png);
+    background-image: url(../images/naneun01.jpg);
+    background-size: cover;
+    filter: saturate(150%);
     border-radius: 20px;
 }
 
@@ -641,7 +698,7 @@ section.contato form {
 
 .form-wrapper span {
     font-size: 15px;
-    color: #b4b4b4;
+    color: white;
 }
 
 .form-wrapper input[type="text"],
@@ -659,6 +716,7 @@ input[type="tel"] {
     border: 2px solid transparent;
     transition: 0.4s;
     background-color: rgb(170, 170, 170);
+    color: white;
 }
 
 .form-wrapper input[type="text"]:focus,
@@ -682,6 +740,7 @@ input[type="tel"]:focus {
     background-color: rgb(170, 170, 170);
     outline: none;
     transition: 0.4s;
+    color: white;
 }
 
 .form-wrapper textarea:focus {
