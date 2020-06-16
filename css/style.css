@@ -57,6 +57,180 @@ a {
 /*** ***/
 
 
+/*** LOADING PAGE ***/
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    z-index: 1001;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: load-spin 1.5s linear infinite;
+    -webkit-animation: load-spin 1.5s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 3px solid transparent;
+    border-top-color: #e74c3c;
+    border-radius: 50%;
+    animation: load-spin 2s linear infinite;
+    -webkit-animation: load-spin 2s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid transparent;
+    border-top-color: #f9c922;
+    border-radius: 50%;
+    animation: load-spin 1.5s linear infinite;
+    -webkit-animation: load-spin 1.5s linear infinite;
+}
+
+@keyframes load-spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes load-spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+    }
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background-color: #222222;
+    z-index: 1000;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+.loaded #loader {
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transition: all 0.3s 1s ease-out;
+    -webkit-transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+
+
+/*******/
+
+
+/* SLIDER */
+
+.photo-slider {
+    display: none;
+}
+
+.slider {
+    display: none;
+}
+
+.proj-desc {
+    display: none;
+}
+
+.fade {
+    animation: fade 1s;
+    -moz-animation: fade 1s;
+    -webkit-animation: fade 1s;
+    position: relative;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/***/
+
+
 /***** HEADER *****/
 
 header {
@@ -145,6 +319,12 @@ div.menu-icon {
 div.menu-icon i {
     font-size: 24px;
     color: white;
+    transition: .4s;
+}
+
+div.menu-icon:hover>i {
+    color: rgb(0, 185, 185);
+    text-shadow: 0px 0px 10px rgb(0, 185, 185);
 }
 
 nav.menu-M {
@@ -473,36 +653,6 @@ section.projects .proj-img:hover {
     filter: grayscale(0%);
 }
 
-
-/* SLIDER */
-
-.slider {
-    display: none;
-}
-
-.proj-desc {
-    display: none;
-}
-
-.fade {
-    animation: fade 1s;
-    -moz-animation: fade 1s;
-    -webkit-animation: fade 1s;
-    position: relative;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/***/
-
 section.projects .proj-txt-wp {
     width: 50%;
     height: 400px;
@@ -602,11 +752,12 @@ section.mid .about .photo-wrapper {
     justify-content: center;
 }
 
-section.mid .about .photo-wrapper .photo {
+section.mid .about .photo-wrapper .photo-slider {
     width: 350px;
     height: 500px;
     background-image: url(../images/naneun01.jpg);
     background-size: cover;
+    background-position: center;
     filter: saturate(150%);
     border-radius: 20px;
 }
