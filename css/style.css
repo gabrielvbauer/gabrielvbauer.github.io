@@ -22,6 +22,9 @@ body {
     margin: 0 auto;
 }
 
+
+/* Button design */
+
 .btn {
     width: 140px;
     padding: 5px 0;
@@ -177,16 +180,16 @@ a {
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .loaded #loader-wrapper .loader-section.section-right {
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .no-js #loader-wrapper {
@@ -220,7 +223,7 @@ a {
 
 @keyframes fade {
     from {
-        opacity: .4;
+        opacity: 0.4;
     }
     to {
         opacity: 1;
@@ -319,7 +322,7 @@ div.menu-icon {
 div.menu-icon i {
     font-size: 24px;
     color: white;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 div.menu-icon:hover>i {
@@ -362,6 +365,9 @@ nav.menu-M ul li.selected {
 
 /****/
 
+
+/* Line that appears at the bottom of the selected page on menu */
+
 li.selected>span {
     position: absolute;
     bottom: -3px;
@@ -372,6 +378,9 @@ li.selected>span {
     background-color: rgb(0, 177, 177);
     transition: 0.4s;
 }
+
+
+/* Button that goes all the way up */
 
 nav.menu-btn {
     position: fixed;
@@ -407,9 +416,9 @@ nav.menu-btn .btn-top:hover {
 
 nav.menu-btn .btn-top:hover>i {
     color: rgb(0, 185, 185);
-    animation: spin .4s 1;
-    -moz-animation: spin .4s 1;
-    -webkit-animation: spin .4s 1;
+    animation: spin 0.4s 1;
+    -moz-animation: spin 0.4s 1;
+    -webkit-animation: spin 0.4s 1;
 }
 
 @-moz-keyframes spin {
