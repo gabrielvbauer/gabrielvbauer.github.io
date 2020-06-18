@@ -410,6 +410,10 @@ a {
     border: 1px solid rgb(255, 115, 115);
 }
 
+.darkmode section.knowledges .knowledges-single .know-icon .jq {
+    background-image: url(../images/jqueryLight.svg);
+}
+
 .darkmode section.knowledges .knowledges-single .know-icon i {
     color: rgb(255, 115, 115);
 }
@@ -1041,6 +1045,12 @@ section.knowledges .knowledges-single .know-all:hover .know-bar {
     color: white;
     background-color: rgb(0, 185, 185);
     border: 1px solid rgb(0, 185, 185);
+}
+
+section.knowledges .knowledges-single .know-icon .jq {
+    background-image: url(../images/jquery.svg);
+    width: 50px;
+    height: 50px;
 }
 
 section.knowledges .knowledges-single .know-icon i {
