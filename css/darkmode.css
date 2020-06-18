@@ -4,6 +4,10 @@
     background-color: #ffffff;
 }
 
+.darkmode body {
+    background-color: white;
+}
+
 
 /* Buttons */
 
