@@ -22,6 +22,7 @@ $(function() {
     return false;
 })
 
+
 $(document).ready(function() {
     $('body').addClass('loaded');
 });

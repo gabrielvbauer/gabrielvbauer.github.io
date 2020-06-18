@@ -200,6 +200,378 @@ a {
 /*******/
 
 
+/*** DARK MODE ***/
+
+.darkmode {
+    background-color: #ffffff;
+}
+
+
+/* Buttons */
+
+.darkmode .btn {
+    border: 2px solid #222222;
+    color: #111111;
+    background-color: transparent;
+}
+
+.darkmode .btn:hover {
+    border: 2px solid rgb(255, 115, 115);
+    color: rgb(50, 50, 50);
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgb(255, 115, 115);
+}
+
+
+/* Loading page */
+
+.darkmode #loader-wrapper .loader-section {
+    background-color: white;
+}
+
+
+/* Header / Menu */
+
+.darkmode header {
+    background-color: rgb(230, 230, 230, 0.4);
+}
+
+.darkmode header .logo h2 {
+    font-weight: lighter;
+    font-size: 27px;
+    color: #111111;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.darkmode header .logo h2:hover {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode header .logo span {
+    color: rgb(255, 115, 115);
+}
+
+
+/* Menu desktop */
+
+.darkmode nav.menu-D ul li {
+    color: #111111;
+}
+
+.darkmode nav.menu-D ul li a:hover {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-D ul li.selected {
+    position: relative;
+    color: rgb(255, 115, 115);
+}
+
+.darkmode div.menu-icon i {
+    color: #111111;
+}
+
+.darkmode div.menu-icon:hover>i {
+    color: rgb(255, 115, 115);
+    text-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+
+/* Menu Mobile */
+
+.darkmode nav.menu-M ul li {
+    color: #111111;
+}
+
+.darkmodenav.menu-M ul li a:hover {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-M ul li.selected {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode li.selected>span {
+    background-color: rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-btn .btn-top {
+    background-color: rgb(150, 150, 150);
+}
+
+.darkmode nav.menu-btn .btn-top i {
+    color: white;
+}
+
+.darkmode nav.menu-btn .btn-top:hover {
+    border: 2px solid rgb(255, 115, 115);
+    background-color: rgb(170, 170, 170);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-btn .btn-top:hover>i {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-btn .btn-darkmode {
+    background-color: rgb(150, 150, 150);
+}
+
+.darkmode nav.menu-btn .btn-darkmode i {
+    color: white;
+}
+
+.darkmode nav.menu-btn .btn-darkmode:hover {
+    border: 2px solid rgb(255, 115, 115);
+    background-color: rgb(170, 170, 170);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+.darkmode nav.menu-btn .btn-darkmode:hover>i {
+    color: rgb(255, 115, 115);
+}
+
+
+/* Call header */
+
+.darkmode section.call-hd {
+    background-image: url(/images/lightbg.jpg);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.darkmode .call-wrapper .call-txt h2 {
+    color: #111111;
+}
+
+.darkmode .call-wrapper .call-txt h3 {
+    color: #111111;
+}
+
+.darkmode .call-wrapper .call-txt h3 span {
+    color: rgb(255, 115, 115);
+}
+
+
+/* Section difs */
+
+.darkmode section.difs {
+    background-color: rgb(240, 240, 240);
+    color: #111111;
+}
+
+.darkmode section.difs .box-single {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgb(80, 80, 80);
+}
+
+.darkmode section.difs .box-single .box-icon i {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.difs .box-single:hover {
+    color: rgb(255, 115, 115);
+    border: 3px solid rgb(255, 115, 115);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+.darkmode section.difs .box-single p strong {
+    color: rgb(255, 115, 115);
+}
+
+
+/* Section knowledges */
+
+.darkmode section.knowledges {
+    color: #111111;
+    background-color: rgb(240, 240, 240);
+}
+
+.darkmode section.knowledges .knowledges-single .know-all {
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+.darkmode section.knowledges .knowledges-single .know-all:hover {
+    border: 3px solid rgb(255, 115, 115);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.knowledges .knowledges-single .know-all:hover .know-bar {
+    color: white;
+    background-color: rgb(255, 115, 115);
+    border: 1px solid rgb(255, 115, 115);
+}
+
+.darkmode section.knowledges .knowledges-single .know-icon i {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.knowledges .knowledges-single .know-items .know-bar {
+    border: 1px solid #222222;
+}
+
+.darkmode section.projects {
+    color: #111111;
+    background-color: rgb(240, 240, 240);
+}
+
+.darkmode section.projects .proj-txt-wp {
+    background-color: white;
+}
+
+.darkmode section.projects .proj-txt-wp:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.darkmode section.projects .proj-nav i:hover {
+    color: rgb(255, 115, 115);
+    text-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+
+/*/
+
+
+/* SECTION GET_IN */
+
+.darkmode section.get-in {
+    color: #111111;
+    background-color: rgb(220, 220, 220);
+}
+
+.darkmode section.get-in h2 span {
+    color: rgb(255, 115, 115);
+}
+
+
+/*/
+
+
+/* FOOTER */
+
+.darkmode footer {
+    color: #111111;
+    background-color: rgb(200, 200, 200);
+}
+
+
+/*/
+
+
+/* SOBRE.HTML */
+
+.darkmode section.mid {
+    background-color: rgb(245, 245, 245);
+}
+
+.darkmode section.mid .about .text {
+    color: #222222;
+}
+
+.darkmode section.mid .about .text p span {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.mid .soc-circle {
+    background-color: rgb(170, 170, 170);
+}
+
+.darkmode section.mid .social a:hover i {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.mid .social a:hover>.soc-circle {
+    background-color: rgb(190, 190, 190);
+    border: 2px solid rgb(255, 115, 115);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+
+/**************/
+
+
+/* CONTATO.HTML */
+
+.darkmode section.contato {
+    background-color: rgb(240, 240, 240);
+}
+
+.darkmode section.contato p {
+    color: #222222;
+}
+
+.darkmode section.contato p>span {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.contato .soc-circle {
+    background-color: rgb(170, 170, 170);
+}
+
+.darkmode section.contato .social a:hover i {
+    color: rgb(255, 115, 115);
+}
+
+.darkmode section.contato .social a:hover>.soc-circle {
+    background-color: rgb(200, 200, 200);
+    border: 2px solid rgb(255, 115, 115);
+    box-shadow: 0px 0px 10px rgb(255, 115, 115);
+}
+
+.darkmode .form-wrapper span {
+    font-size: 15px;
+    color: #222222;
+}
+
+.darkmode .form-wrapper input[type="text"],
+.darkmode input[type="email"],
+.darkmode input[type="tel"] {
+    border: 1px solid #444444;
+    background-color: white;
+    color: #222222;
+}
+
+.darkmode .form-wrapper input[type="text"]:focus,
+.darkmode input[type="email"]:focus,
+.darkmode input[type="tel"]:focus {
+    background-color: rgb(230, 230, 230);
+    border: 2px solid rgb(255, 115, 115);
+    box-shadow: 0px 0px 5px rgb(255, 115, 115);
+}
+
+.darkmode .form-wrapper textarea {
+    background-color: rgb(255, 255, 255);
+    color: #222222;
+    border: 1px solid #444444;
+}
+
+.darkmode .form-wrapper textarea:focus {
+    border: 2px solid rgb(255, 115, 115);
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0px 0px 5px rgb(255, 115, 115);
+}
+
+.darkmode .form-wrapper input[type="submit"] {
+    border: 2px solid rgb(60, 60, 60);
+    color: #222222;
+}
+
+.darkmode .form-wrapper input[type="submit"]:hover {
+    border: 2px solid rgb(255, 115, 115);
+}
+
+
+/*******/
+
+
 /* SLIDER */
 
 .photo-slider {
@@ -382,11 +754,20 @@ li.selected>span {
 
 /* Button that goes all the way up */
 
-nav.menu-btn {
+.options {
+    width: 30px;
+    height: 70px;
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
+
+nav.menu-btn {
+    padding: 5px 0;
+}
+
+
+/* Menu to top buttons */
 
 nav.menu-btn .btn-top {
     width: 30px;
@@ -440,6 +821,64 @@ nav.menu-btn .btn-top:hover>i {
 }
 
 
+/* Toggle darkmode buttons */
+
+nav.menu-btn .btn-darkmode {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+nav.menu-btn .btn-darkmode i {
+    width: 100%;
+    font-size: 18px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+}
+
+nav.menu-btn .btn-darkmode:hover {
+    border: 2px solid rgb(0, 185, 185);
+    background-color: rgb(80, 80, 80);
+    box-shadow: 0px 0px 10px rgb(0, 185, 185);
+}
+
+nav.menu-btn .btn-darkmode:hover>i {
+    color: rgb(0, 185, 185);
+    animation: spin 0.4s 1;
+    -moz-animation: spin 0.4s 1;
+    -webkit-animation: spin 0.4s 1;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+
 /**********/
 
 
@@ -455,6 +894,11 @@ section.call-hd {
     height: 698px;
     background-image: url(/images/background.png);
     background-size: cover;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
 
 .call-wrapper {
@@ -481,6 +925,10 @@ section.call-hd {
     font-weight: lighter;
     float: right;
     color: white;
+}
+
+.call-wrapper .call-txt h3 span {
+    color: rgb(0, 185, 185);
 }
 
 
@@ -532,6 +980,10 @@ section.difs .box-single h2 {
 
 section.difs .box-single p {
     padding: 0 20px;
+}
+
+section.difs .box-single p strong {
+    color: rgb(0, 185, 185);
 }
 
 section.difs .box-single:hover {
@@ -717,6 +1169,10 @@ section.get-in {
     background-color: #1e1e1e;
 }
 
+section.get-in h2 span {
+    color: rgb(0, 185, 185);
+}
+
 
 /**********/
 
@@ -780,6 +1236,10 @@ section.mid .about .text {
 
 section.mid .about .text p {
     font-size: 20px;
+}
+
+section.mid .about .text p span {
+    color: rgb(0, 185, 185);
 }
 
 section.mid .social {
@@ -1059,6 +1519,33 @@ input[type="tel"]:focus {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 553px) {
+    section.knowledges .knowledges-single {
+        width: 100%;
+    }
+}
+
+
+/****************/
+
+@media screen and (max-width: 553px) {
+    section.knowledges .knowledges-single {
+        width: 100%;
+    }
+}
+
+
+/****************/
+
+@media screen and (max-width: 553px) {
+    section.knowledges .knowledges-single {
+        width: 100%;
+    }
+}
+
+
+/****************/
 
 @media screen and (max-width: 553px) {
     section.knowledges .knowledges-single {
